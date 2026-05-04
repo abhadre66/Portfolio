@@ -101,7 +101,7 @@ export default function Hero() {
             </button>
 
             <a
-              href={`${process.env.NODE_ENV === 'production' ? '/Portfolio' :''}/Abhishek_Bhadre_Resume.pdf`}
+              href={`${process.env.NODE_ENV === 'production' ? '/Portfolio' :''}/public/Abhishek_Bhadre_Resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass font-semibold hover:bg-muted/50 transition-all"
