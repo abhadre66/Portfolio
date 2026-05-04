@@ -74,14 +74,14 @@ export default function Contact() {
             className="flex gap-3 mt-4"
           >
             <a
-              href="#"
+              href="https://www.linkedin.com/in/abhishek-bhadre06/"
               aria-label="LinkedIn"
               className="w-12 h-12 rounded-xl glass glow-border flex items-center justify-center hover:bg-primary/10 hover:text-primary transition-all hover:glow-sm"
             >
               <Linkedin size={20} />
             </a>
             <a
-              href="#"
+              href="https://github.com/abhadre66"
               aria-label="Github"
               className="w-12 h-12 rounded-xl glass glow-border flex items-center justify-center hover:bg-primary/10 hover:text-primary transition-all hover:glow-sm"
             >
