@@ -75,6 +75,8 @@ export default function Contact() {
           >
             <a
               href="https://www.linkedin.com/in/abhishek-bhadre06/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="w-12 h-12 rounded-xl glass glow-border flex items-center justify-center hover:bg-primary/10 hover:text-primary transition-all hover:glow-sm"
             >
@@ -82,6 +84,8 @@ export default function Contact() {
             </a>
             <a
               href="https://github.com/abhadre66"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Github"
               className="w-12 h-12 rounded-xl glass glow-border flex items-center justify-center hover:bg-primary/10 hover:text-primary transition-all hover:glow-sm"
             >
