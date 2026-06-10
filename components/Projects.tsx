@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, ExternalLink } from "lucide-react";
+import { Code2, ExternalLink, Github } from "lucide-react";
 import { resumeData } from "@/data/resume";
 import SectionWrapper from "./SectionWrapper";
 
@@ -39,10 +39,34 @@ export default function Projects() {
                     </div>
                   </div>
                 </div>
-                <ExternalLink
-                  size={18}
-                  className="text-muted-foreground/30 group-hover:text-primary transition-colors flex-shrink-0 mt-1"
-                />
+                <div className="flex items-center gap-3 flex-shrink-0 mt-1">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.title} on GitHub`}
+                    >
+                      <Github
+                        size={18}
+                        className="text-muted-foreground/30 group-hover:text-primary transition-colors"
+                      />
+                    </a>
+                  )}
+                  {project.website && (
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.title} live demo`}
+                    >
+                      <ExternalLink
+                        size={18}
+                        className="text-muted-foreground/30 group-hover:text-primary transition-colors"
+                      />
+                    </a>
+                  )}
+                </div>
               </div>
 
               {/* Stack */}

@@ -47,8 +47,23 @@ export const resumeData = {
   ],
   projects: [
     {
+      title: "Neuronix Lab",
+      subtitle: "Self-Hosted ML Training Platform",
+      github: "https://github.com/abhadre66/Neuronix-Lab",
+      website: "https://neuronix-lab.vercel.app",
+      stack: ["Next.js", "FastAPI", "Celery", "Redis", "PyTorch", "MLflow", "PostgreSQL", "Prometheus", "Grafana", "Docker"],
+      bullets: [
+        "Built a fully self-hosted, Dockerized ML training platform where users submit training jobs from a Next.js dashboard and watch live loss/accuracy charts update epoch-by-epoch.",
+        "Designed an asynchronous job queue with FastAPI, Celery, and Redis to distribute training jobs across multiple worker replicas running PyTorch.",
+        "Implemented training pipelines for image classifiers (MLP, CNN, ResNet-18, MobileNet, EfficientNet) on MNIST/CIFAR-10, text classifiers (BERT-Tiny, DistilBERT) on SST-2, and regression models on custom CSV datasets.",
+        "Integrated MLflow for experiment tracking and model artifact versioning, plus a Prometheus + Grafana stack for real-time training and infrastructure monitoring, all orchestrated via Docker Compose.",
+      ],
+    },
+    {
       title: "AI Interview Engine",
       subtitle: "Voice-First Candidate Screening Platform",
+      github: "https://github.com/abhadre66/ai-interview-engine",
+      website: "https://ai-interview-engine-ten.vercel.app/login",
       stack: ["Next.js", "Express", "Claude Sonnet/Haiku", "Deepgram", "Supabase", "Railway", "Vercel"],
       bullets: [
         "Engineered a real-time voice pipeline integrating Deepgram Nova-2 (speech-to-text) and Aura (text-to-speech) with Claude Sonnet 4.6, achieving 4-5s end-to-end latency per conversational turn and replacing human interviewers for initial candidate screening.",
@@ -60,6 +75,8 @@ export const resumeData = {
     {
       title: "CodeSyntax AI",
       subtitle: "Full-Stack RAG Developer Assistant",
+      github: "https://github.com/abhadre66/SyntaxAI-RAG-",
+      website: "https://syntax-ai-rag.vercel.app",
       stack: ["Python", "FastAPI", "Next.js", "LangChain", "Pinecone", "Docker", "GitHub Actions"],
       bullets: [
         "Built and deployed a production Retrieval-Augmented Generation application that answers Python developer questions by retrieving from Python Docs, RealPython, and StackOverflow and generating grounded responses with GPT-4o-mini and OpenAI embeddings stored in a Pinecone vector index.",
@@ -71,6 +88,8 @@ export const resumeData = {
     {
       title: "AuthentiText",
       subtitle: "AI-Generated Text Detection Engine",
+      github: "https://github.com/abhadre66/AI-text-Detector",
+      website: "https://huggingface.co/spaces/Abhadre/AI-Text-detector",
       stack: ["Python", "XGBoost", "DistilBERT", "HuggingFace", "GCP", "Docker"],
       bullets: [
         "Built a dual-model ensemble (XGBoost + fine-tuned DistilBERT) that detects AI-generated text with 99.1% F1 and 99.96% AUROC, fusing 21 handcrafted linguistic features (perplexity, burstiness, lexical density) with transformer embeddings.",
