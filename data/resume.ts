@@ -3,9 +3,9 @@ export const resumeData = {
     name: "Abhishek Bhadre",
     title: "AI Engineer",
     summary:
-      "AI Engineer and M.S. Artificial Intelligence candidate with production experience building end-to-end ML systems — from computer vision pipelines deployed on Kubernetes to full-stack RAG applications serving LLM-powered responses. Strong Python and systems fundamentals, with a track record of shipping models that move real metrics: +30% detection accuracy in production, 99.2% F1 on text classification, and 25% faster inference on deployed services. Passionate about designing scalable, reliable AI software that users actually touch.",
+      "M.S. in Artificial Intelligence from Illinois Institute of Technology with experience building and deploying machine learning and full-stack AI systems in production. Shipped a real-time conversational AI interview platform, a retrieval-augmented generation (RAG) developer tool in production, and a computer vision pipeline on Kubernetes with 30% accuracy improvement. Proficient in Python, TypeScript, LLMs, NLP, and cloud infrastructure across AWS, GCP, Railway, and Vercel.",
     location: "Chicago, IL",
-    email: "abhadre@hawk.iit.edu",
+    email: "abhadre@hawk.illinoistech.edu",
     phone: "(872) 288 3802",
     links: {
       linkedin: "LinkedIn",
@@ -26,7 +26,8 @@ export const resumeData = {
     },
   ],
   achievements: [
-    { metric: "99.2%", context: "F1 score on AI-generated text detection (AuthentiText)", type: "metrics" },
+    { metric: "4-5s", context: "End-to-end latency per conversational turn (AI Interview Engine)", type: "metrics" },
+    { metric: "99.1%", context: "F1 score on AI-generated text detection (AuthentiText)", type: "metrics" },
     { metric: "99.96%", context: "AUROC on AI-generated text detection", type: "metrics" },
     { metric: "30%", context: "Detection accuracy improvement with YOLO pipeline", type: "metrics" },
     { metric: "85.4%", context: "Accuracy with NumPy/Pandas augmentation pipeline", type: "metrics" },
@@ -40,11 +41,22 @@ export const resumeData = {
     { metric: "21", context: "Handcrafted linguistic features fused with transformers", type: "metrics" },
   ],
   topImpact: [
-    { metric: "99.2%", context: "F1 on AI-generated text detection" },
+    { metric: "4-5s", context: "End-to-end latency per conversational AI turn" },
+    { metric: "99.1%", context: "F1 on AI-generated text detection" },
     { metric: "+30%", context: "Detection accuracy with YOLO pipeline in production" },
-    { metric: "32M+", context: "Amazon reviews processed end-to-end" },
   ],
   projects: [
+    {
+      title: "AI Interview Engine",
+      subtitle: "Voice-First Candidate Screening Platform",
+      stack: ["Next.js", "Express", "Claude Sonnet/Haiku", "Deepgram", "Supabase", "Railway", "Vercel"],
+      bullets: [
+        "Engineered a real-time voice pipeline integrating Deepgram Nova-2 (speech-to-text) and Aura (text-to-speech) with Claude Sonnet 4.6, achieving 4-5s end-to-end latency per conversational turn and replacing human interviewers for initial candidate screening.",
+        "Designed a multi-turn conversational AI engine with dynamic context injection: the LLM receives each candidate's parsed resume before the session and generates targeted, role-specific follow-up questions in real time.",
+        "Built an automated document ingestion pipeline (PDF parsing, Claude Haiku, MD5 deduplication caching) and a post-interview evaluation system scoring candidates across 4 dimensions with advance/hold/reject output.",
+        "Deployed full-stack on Railway, Vercel, and Supabase (PostgreSQL + Row-Level Security + Magic Link authentication) with Brevo SMTP for transactional email automation.",
+      ],
+    },
     {
       title: "CodeSyntax AI",
       subtitle: "Full-Stack RAG Developer Assistant",
@@ -61,7 +73,7 @@ export const resumeData = {
       subtitle: "AI-Generated Text Detection Engine",
       stack: ["Python", "XGBoost", "DistilBERT", "HuggingFace", "GCP", "Docker"],
       bullets: [
-        "Built a dual-model ensemble (XGBoost + fine-tuned DistilBERT) that detects AI-generated text with 99.2% F1 and 99.96% AUROC, fusing 21 handcrafted linguistic features (perplexity, burstiness, lexical density) with transformer embeddings.",
+        "Built a dual-model ensemble (XGBoost + fine-tuned DistilBERT) that detects AI-generated text with 99.1% F1 and 99.96% AUROC, fusing 21 handcrafted linguistic features (perplexity, burstiness, lexical density) with transformer embeddings.",
         "Engineered the full NLP pipeline end-to-end: data collection via GPT-4 API and the HC3 dataset, feature extraction, hyperparameter tuning, and production deployment on GCP via Docker and GitHub Actions CI/CD.",
         "Benchmarked 4 model architectures (Logistic Regression, Random Forest, XGBoost, DistilBERT) with ROC curves, confusion matrices, and SHAP analysis; built a token-level heatmap visualizer for model explainability.",
       ],
@@ -107,8 +119,12 @@ export const resumeData = {
         "AWS",
         "GCP",
         "FastAPI",
+        "Express.js",
+        "Node.js",
         "REST APIs",
+        "PostgreSQL",
         "MySQL",
+        "Supabase",
         "Pinecone",
         "FAISS",
         "Git",
@@ -116,7 +132,7 @@ export const resumeData = {
     },
     {
       category: "Frontend",
-      items: ["React", "Next.js", "Tailwind CSS"],
+      items: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
     },
   ],
   education: [
